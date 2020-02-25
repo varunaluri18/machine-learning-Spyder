@@ -8,8 +8,8 @@ grid_search=GridSearchCV(estimator=svmlinear,
                          param_grid=parameters,
                          cv=10)
 
+accuracy=grid_search.best_score_
 grid_search.best_params_
-
 
 
 '''Randomized searchCV'''
@@ -24,4 +24,5 @@ rf_p_dist={'max_depth':[3,5,10,None],
 		'bootstrap':[True,False]}
 rdm_search= RandomizedSearchCV(est,param_distributions=p_distr
 				,n_jobs=-1,n_iter=nbr_iter,cv=9)
+accuracy=rdm_search.best_score_
 rdm_search.best_params_
