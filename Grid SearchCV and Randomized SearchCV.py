@@ -13,7 +13,7 @@ grid_search.best_params_
 
 
 '''Randomized searchCV'''
-from sklearn.model_selection import RAndomizedSearchCV
+from sklearn.model_selection import RandomizedSearchCV
 from skipy.stats import randint
 
 est=RandomForestClassifier(n_jobs=-1)
